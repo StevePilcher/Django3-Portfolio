@@ -9,3 +9,6 @@ class Project(models.Model):
                               width_field=None,
                               max_length=100)
     image_url = models.URLField(max_length=200, blank=True)
+
+    def __str__(self):
+        return self.title
